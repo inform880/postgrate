@@ -1,12 +1,4 @@
-import {
-  help,
-  init,
-  list,
-  make,
-  rollback,
-  run,
-  seed,
-} from '../commands/index.js';
+import { help, init, list, make, rollback, run } from '../commands/index.js';
 
 export default async ({ command, second }: IParserInput) => {
   switch (command) {
@@ -38,11 +30,6 @@ export default async ({ command, second }: IParserInput) => {
     case '-h':
     case 'help':
       help();
-      break;
-
-    case '-s':
-    case 'seed':
-      seed();
       break;
 
     default:
