@@ -10,7 +10,6 @@ Commands:
   -m,  make      Create a migration file
   -r,  run       Run all pending migrations
   -rb, rollback  Rollback a migration
-  -s,  seed      Seed the database with seed.sql
 
 Examples:
   $ postgrate -h
@@ -19,6 +18,5 @@ Examples:
   $ postgrate -m create-users-table
   $ postgrate -r
   $ postgrate -rb 1
-  $ postgrate -s
 `);
 }
